@@ -1,0 +1,28 @@
+
+*{margin:0;padding:0;}
+.display{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#0090DA;
+}
+
+
+.container{
+  width:70vw;
+  height:70vh;
+  background-color: #fff;
+}
+h1{
+  color: aliceblue;
+  font-size:100px;
+  font-family:'Courier New', Courier, monospace;
+  text-decoration-line: none;
+}
+
+
+a{
+  text-decoration: none; 
+}
