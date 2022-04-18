@@ -1,0 +1,114 @@
+*{margin:0;padding:0;}
+
+
+body{
+  background-image:url('https://t1.daumcdn.net/cfile/tistory/99B58D385DF8757F39');
+}
+
+header{
+  width:100vw;
+  height:10vh;
+  border:1px solid black;
+  backdrop-filter:url('https://t1.daumcdn.net/cfile/tistory/99B58D385DF8757F39') blur(4px) saturate(150%);
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav{
+  width:30vw;
+  height:5vh;
+  display:flex;
+  backdrop-filter:blur(5px);
+  color: aliceblue;
+  text-align: center;
+}
+
+
+main{
+  width:100vw;
+  height:60vh;
+  border:1px solid black;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+main > div{
+  width:100px;
+  height:300px;
+  border:1px solid white;
+  opacity:60%;
+  margin:10px;
+  backdrop-filter:url('https://t1.daumcdn.net/cfile/tistory/99B58D385DF8757F39') blur(4px) saturate(150%);
+  font-size:x-small;
+  display:flex;
+}
+
+main > div:nth-child(1){
+  width:480px;
+  color: aliceblue;
+  border:none;
+  border-left:2px solid white;
+  backdrop-filter:none;
+  display:flex;
+  align-items: center;
+
+}
+main > div:nth-child(2){
+  width:300px;
+  color:aliceblue;
+  background-color:black;
+  display:flex;
+  flex-direction: column;
+
+}
+
+main > div:nth-child(3){
+  opacity:50%;
+  background-color:black;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+
+main > div:nth-child(4){
+  margin-right:30px;
+  opacity:35%;
+  background-color:black;
+
+  
+}
+
+main > div > h1,p{
+  margin:10px;
+}
+
+main > div > div{
+  width:10px;
+  height:10px;
+  background-color: #fff;
+  display:inline-block;
+}
+
+footer{
+  width:100vw;
+  height:40vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #13131F;
+}
+footer>img{
+  position: relative;
+  margin-bottom:150px;
+}
+footer>div{
+  width:40vw;
+  height:20vh;
+  color: gainsboro;
+  margin-right:80px;
+
+}
