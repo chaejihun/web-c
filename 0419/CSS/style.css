@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* root 자식 두개의 스타일 동시에 진행 */
+#root > div {
+  border: 1px solid white;
+}
+
+/* --------------------------------------------------- */
+/*  첫번째 자식 #shape */
+#shape {
+  /* #shape들의 자식들에게 absolute를 사용할 예정이기 때문에 #shape에 특별한 포지셔닝은 없으나 임의의 값을 부여 */
+  position: relative;
+  width: inherit;
+  height: 50vh;
+  top: 1px;
+}
+
+/* #shape의 직계자식 div 들에게 일괄 position:absolute 부여 */
+#shape > div {
+  position: absolute;
+}
+
+/* 첫번째 자식 빨간원 */
+#shape > div:nth-child(1) {
+  width: 10vw;
+  height: 10vw;
+  background-color: salmon;
+  border-radius: 50%;
+  left: 10vw;
+  top: 10vh;
+  /* 맨 밑에 깔리게 하기 위해 z-index 가장 낮은값 부여 */
+  z-index: 0;
+}
+
+/* 두번째 자식 노란 선 */
+#shape > div:nth-child(2) {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  border: 2px solid yellow;
+  left: 14vw;
+  top: 15vh;
+}
+
+/* 세번째 자식 쩜쩜쩜 */
+#shape > div:nth-child(3) {
+  width: 1vw;
+  height: 10vw;
+  left: 10vw;
+  top: 20vh;
+}
+
+#shape > div:nth-child(3) > div {
+  width: 1vw;
+  height: 1vw;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-top: 2vh;
+}
+
+/* --------------------------------------------------- */
+#card-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-contains {
+  width: 90vw;
+  height: 50vh;
+  position: relative;
+  background-color: rgba(200, 200, 200, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 1vw;
+  top: -20vh;
+  margin-bottom: 2vh;
+  border-radius: 3vw;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card-contains > h1 {
+  width: 80vw;
+  height: 20vh;
+  /* background-color: #fff; */
+  margin: 2vw;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 900;
+}
+/*# sourceMappingURL=style.css.map */
