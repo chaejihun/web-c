@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      width:100vw;
+      height:100vh;
+      display:flex;
+      justify-content: center;
+      align-content: center;
+    }
+    #root{
+      width:80vw;
+      height:80vh;
+      border:1px solid black;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    #root>div{
+      width:70vw;
+      height:20vh;
+      display:flex;
+
+    }
+    #root>div:nth-child(1){
+      width:70vw;
+      height:10vh;
+      background-color: #fff;
+      position: absolute;
+      top:25%;
+
+    }
+
+    #root>div:nth-child(3){
+      width:70vw;
+      height:10vh;
+      background-color: #fff;
+      position: absolute;
+      top:37%;
+    }
+
+    #root>div>h1{
+      width:5vw;
+      height:5vh;
+    }
+    #root>div>h1:nth-child(3){
+      transform: rotate(-180deg);
+    }
+    #root>div>h1:nth-last-child(3){
+      transform: rotate(-180deg);
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div></div>
+    <div>
+      <h1>W</h1> 
+      <h1>H</h1>
+      <h1>A</h1>
+      <h1>T</h1>
+      <h1>E</h1>
+      <h1>V</h1>
+      <h1>E</h1>
+      <h1>R</h1>
+      <h1>Y</h1>
+      <h1>O</h1>
+      <h1>U</h1>  
+      <H1>W</H1>
+      <H1>A</H1>
+      <H1>N</H1>
+      <H1>T</H1>
+
+
+    </div>
+    <div></div>
+  </div>
+</body>
+</html>
